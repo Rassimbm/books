@@ -13,3 +13,9 @@ UPDATE books SET title = "C#" WHERE title = "C Sharp";
 
 Change the first name of the 4th user to Bill
 UPDATE users SET first_name = "Bill" WHERE users.id = 4;
+
+Have the first user favorite the first 2 books
+Have the second user favorite the first 3 books
+Have the third user favorite the first 4 books
+Have the fourth user favorite all the books
+INSERT INTO favorites (user_id, book_id) VALUES (1, 1), (1, 2), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3), (3, 4), (4, 1), (4, 2), (4, 3), (4, 4), (4, 5);
