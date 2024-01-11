@@ -5,3 +5,6 @@ INSERT INTO users (first_name, last_name) VALUES ("Jane", "Amsden"), ("Emily", "
 Create 5 books with the following names: C Sharp, Java, Python, PHP, Ruby
 INSERT INTO books (title) VALUES ("C Sharp"), ("Java"), ("Python"), ("PHP"), ("Ruby");
 
+INSERT INTO books (number_of_pages) VALUES (318), (297), (310), (288), (245);
+
+
