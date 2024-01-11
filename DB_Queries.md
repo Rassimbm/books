@@ -8,3 +8,5 @@ INSERT INTO books (title) VALUES ("C Sharp"), ("Java"), ("Python"), ("PHP"), ("R
 INSERT INTO books (number_of_pages) VALUES (318), (297), (310), (288), (245);
 
 
+Change the name of the C Sharp book to C#
+UPDATE books SET title = "C#" WHERE title = "C Sharp";
