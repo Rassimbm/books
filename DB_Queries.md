@@ -24,3 +24,7 @@ Retrieve all the users who favorited the 3rd book
 SELECT * FROM users LEFT JOIN favorites ON users.id = favorites.user_id LEFT JOIN books ON favorites.book_id = books.id WHERE books.id = 3;
 SELECT * FROM users JOIN favorites ON users.id = favorites.user_id WHERE favorites.book_id = 3;
 
+Remove the first user of the 3rd book's favorites
+DELETE FROM favorites WHERE user_id = 2 AND book_id = 3;
+DELETE FROM favorites WHERE user_id = (SELECT user_id FROM favorites WHERE book_id = 3 ORDER BY user_ID ASC LIMIT 1);
+
