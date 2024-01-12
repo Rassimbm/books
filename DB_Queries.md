@@ -30,3 +30,6 @@ DELETE FROM favorites WHERE user_id = (SELECT user_id FROM favorites WHERE book_
 
 Have the 5th user favorite the 2nd book
 INSERT INTO favorites (user_id, book_id) VALUES (5,2);
+
+Find all the books that the 3rd user favorited
+SELECT * FROM books JOIN favorites ON books.id = favorites.book_id WHERE favorites.user_id = 3;
