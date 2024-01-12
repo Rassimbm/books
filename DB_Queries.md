@@ -28,3 +28,5 @@ Remove the first user of the 3rd book's favorites
 DELETE FROM favorites WHERE user_id = 2 AND book_id = 3;
 DELETE FROM favorites WHERE user_id = (SELECT user_id FROM favorites WHERE book_id = 3 ORDER BY user_ID ASC LIMIT 1);
 
+Have the 5th user favorite the 2nd book
+INSERT INTO favorites (user_id, book_id) VALUES (5,2);
