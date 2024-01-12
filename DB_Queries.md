@@ -33,3 +33,6 @@ INSERT INTO favorites (user_id, book_id) VALUES (5,2);
 
 Find all the books that the 3rd user favorited
 SELECT * FROM books JOIN favorites ON books.id = favorites.book_id WHERE favorites.user_id = 3;
+
+Find all the users that favorited to the 5th book
+SELECT * FROM users JOIN favorites ON users.id = favorites.user_id WHERE favorites.book_id = 5;
